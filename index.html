@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proyecto Lógica</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="container " id="container">
+    <h1>Traductor de Fórmulas Moleculares</h1>
+    <div class="text">
+        <input type="text" id="search" placeholder="Digite la fómula molecular. Ejemplo: H20">
+        <p class="hidden" id="error"></p>
+    </div>
+    <div class="buttons">
+      <input type="button" id="button" value="Traducir">
+      <input type="button" id="clean" value="Limpiar">
+    </div>
+  </div>
+  <div class="Description hidden" id="formulaDescription">
+      <h1>Traductor de Fórmulas Moleculares</h1>
+      <div class="container2">
+        <p class="formula" id="formula"></p>
+        <h2>Descripción Atómica</h2>
+        <p id="description" class="desc"></p>
+        <ul id="ul" class="ul"></ul>
+      </div>
+      <div class="button" id="back">
+        <input type="button" value="Volver">
+      </div>
+  </div>
+  <script type="text/javascript" src="Script.js"></script>
+
+</body>
+</html>

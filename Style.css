@@ -1,0 +1,92 @@
+.container{
+    /*border: 1px solid grey;*/
+    border-radius: 10px;
+    width: 800px;
+    height: 200px;
+    margin: 170px auto 0;
+}
+.container h1, .Description h1{
+    text-align: center;
+    color: rgb(84, 71, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.container .text{
+    text-align: center;
+    margin-top: 40px;
+}
+.container .text input{
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+}
+::placeholder{
+    font-size: 15px;
+    color: #8a7878;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container .text p{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.hidden{
+    display: none;
+}
+.container .buttons{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container .buttons input{
+    border: 1px solid #389cf1;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color:#389cf1;
+    color: white;
+    cursor: pointer;
+}
+
+.Description{
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 500px;
+    
+    margin: 170px auto 0;
+}
+.Description .formula, .desc, .ul{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(84, 71, 71);
+    font-size: 15px;
+}
+.Description .formula{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Description h2{
+    color: rgb(84, 71, 71);
+    margin: 15px 0 15px 0;
+}
+.Description .container2{
+    padding: 10px 20px 10px 20px;
+}
+.Description .button{
+    text-align: center;
+    width: 500px;
+    margin-bottom: 15px;
+}
+.Description .button input{
+    border: 1px solid #389cf1;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    background-color:#389cf1;
+    color: white;
+    cursor: pointer;
+}

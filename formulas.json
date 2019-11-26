@@ -1,0 +1,20 @@
+[
+    {"formula": "H2O","nombre": "Agua"},
+    {"formula": "Na2O","nombre": "óxido de sodio"},
+    {"formula": "K2O","nombre": "óxido de potasio"},
+    {"formula": "MgO","nombre": "óxido de magnesio"},
+    {"formula": "NaOH","nombre": "hidróxido de sodio"},
+    {"formula": "KOH","nombre": "hidróxido de potasio"},
+    {"formula": "N2O","nombre": "óxido nitroso"},
+    {"formula": "NO2","nombre": "dióxido de nitrógeno"},
+    {"formula": "SO2","nombre": "dióxido de azufre"},
+    {"formula": "SO3","nombre": "trióxido de azufre"},
+    {"formula": "HCl","nombre": "ácido clorhídrico"},
+    {"formula": "H3PO4","nombre": "ácido fosfórico"},
+    {"formula": "H2SO3","nombre": "ácido sulfuroso"},
+    {"formula": "H2SO4","nombre": "ácido sulfúrico"},
+    {"formula": "NaCl","nombre": "cloruro de sodio"},
+    {"formula": "Na3PO4","nombre": "fosfato de sodio"},
+    {"formula": "Na2SO3","nombre": "sulfito de sodio"},
+    {"formula": "Na2SO4","nombre": "sulfato de sodio"}
+]
