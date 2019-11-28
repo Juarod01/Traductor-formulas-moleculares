@@ -66,7 +66,7 @@ function isLetterOrNumber(letter){
                     elements[i] = letter[i] 
                 }
                 else{ //Lowercase
-                    if(checkType(elements[i-1])==false || isLetterOrNumber(elements[i-1])==false){ 
+                    if(checkType(elements[i-1])==false || isLetterOrNumber2(elements[i-1])==false){ 
                         //console.log("La formula esta mal escrita")
                         error.classList.remove("hidden")
                         error.innerHTML = error.innerHTML + "Verificar fórmula, está mal escrita."
@@ -82,12 +82,21 @@ function isLetterOrNumber(letter){
         }
         container.classList.add("hidden")
         formulaDescription.classList.remove("hidden")
-        importData(elements)
+        removeItemFromArr(elements)
+        //importData(elements)
     }else{
         //console.log("Debe empezar con letra mayuscula")
         error.classList.remove("hidden")
         error.innerHTML = error.innerHTML + "Verificar fórmula, está mal escrita."
     }   
+}
+
+function isLetterOrNumber2(letter){
+    if(isNaN(letter)){
+        return true
+    }else{
+        return false
+    }
 }
 
 function checkType(Letter) {
@@ -105,18 +114,33 @@ function importData(symbol){
     xhttp.open('GET', 'elementos.json', true)
     xhttp.send()
     xhttp.onreadystatechange = function(){
+        //removeItemFromArr(symbol)
         if(this.readyState == 4 && this.status == 200){
             let Data = JSON.parse(this.responseText)
             for(let i of Data){
                 for(var j=0; j<symbol.length; j++){
                     if(i.Símbolo == symbol[j]){
+                        //debugger
+                        //console.log(isLetterOrNumber2(symbol[j]))
                         //console.log(i.Nombre)
-                        ul.innerHTML = ul.innerHTML + "<li>" + i.Nombre + "</li>"
+                        if(isLetterOrNumber2(symbol[j+1])){
+                            ul.innerHTML = ul.innerHTML + "<li>" + "Hay 1 átomo de " + i.Nombre + "</li>"
+                        }else{
+                            ul.innerHTML = ul.innerHTML + "<li>" + "Hay " + symbol[j+1] + " átomos de " + i.Nombre + "</li>"
+                        }
                     } 
                 }
             }
         }
     }
+}
+
+function removeItemFromArr(arr){
+    var filtered = arr.filter(function (el) {
+        return el != null
+      })
+      importData(filtered)
+      //console.log(filtered)
 }
 
 function showFormula(symbol){
